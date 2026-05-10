@@ -28,4 +28,14 @@ public class Prestec {
 
         // Data de retorn
     public LocalDate getDataRetorn() { return dataRetorn; }
+
+        // Data de préstec
+    public LocalDate getDataPrestec() { return dataPrestec; }
+
+    // Sobreescripts
+        // toString
+    @Override 
+    public String toString() {
+        return "Usuari: " + usuari.getNom() + " | Llibre: " + llibre.getTitol() + " | Data préstec: " + dataPrestec + " | Data retorn: " + dataRetorn;
+    }
 }
